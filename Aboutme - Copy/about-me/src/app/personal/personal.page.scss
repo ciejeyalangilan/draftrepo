@@ -1,0 +1,51 @@
+ion-content{
+    --background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+ion-button{
+    display: block;
+    font-family: Century Gothic;
+    font-size: 15px;
+    width: 30%;
+    margin: auto;
+    border: 3px;
+}
+
+ion-toolbar{
+    --background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: white;
+    border: 0px;
+}
+
+ion-title{
+    font-family: century gothic;
+    font-size: 20px;
+
+   
+}
+
+ion-card{
+    font-family: century gothic;
+    font-size: 15px;
+    text-align: center;
+    --background: white;
+}
+
+img{
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ion-label{
+    font-family: century gothic;
+    font-size: 12x;
+    text-align: center;
+    
+}
+h5{
+  
+    font-family: century gothic;
+    font-size: 20px;
+    margin-left: 40px;
+  }
+  
+  

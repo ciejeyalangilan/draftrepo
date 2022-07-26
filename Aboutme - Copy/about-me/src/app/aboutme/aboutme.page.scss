@@ -1,0 +1,48 @@
+
+ion-card-title{
+    font-family: Century Gothic;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+}
+ion-card-header{
+    --background:#ff1493;
+}
+ion-card{ 
+    --background: #ff1493;
+
+}
+ion-content{
+
+    --background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+ }
+
+ ion-button{
+    font-family: Century Gothic;
+    font-size: 20px;
+    max-width: 400px;
+    margin: auto;
+     border: 3px;
+    --background: #9370db;
+ }
+ img {
+    border-radius: 60%;
+    border: 2px solid #ddd;
+    padding: 5px;
+    width: 200px;
+    
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+h4{
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+

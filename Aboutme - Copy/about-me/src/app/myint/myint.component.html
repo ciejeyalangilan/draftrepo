@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="aboutme"></ion-back-button>
+    </ion-buttons>
+    <h5>Interests</h5>
+  </ion-toolbar>
+  
+
+<ion-card>
+  <img src ="assets/fav.png" class="center">
+
+<ion-card>
+  <h1 body style="background-color:#ff1493">HOBBIES</h1>
+</ion-card>  
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 0">{{p.hobby}}</h2>
+  </ion-card>
+
+<ion-card>
+  <h1 body style="background-color:#ff1493">DREAM COUNTRY</h1>
+</ion-card>
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 1">{{p.country}}</h2>
+  </ion-card>
+
+<ion-card>
+  <h1 body style="background-color:#ff1493">DREAM CAR</h1>
+</ion-card>
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 2">{{p.car}}</h2>
+  </ion-card>
+
+<ion-card>
+  <h1 body style="background-color:#ff1493">DREAM JOB</h1>
+</ion-card>
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 3">{{p.job}}</h2>
+  </ion-card>
+
+<ion-card>
+  <h1 body style="background-color:#ff1493;">CELEBRITY CRUSH</h1>
+</ion-card>
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 4">{{p.crush}}</h2>
+  </ion-card>
+
+<ion-card>
+  <h1 body style="background-color:#ff1493">FAVORITE SONG</h1>
+</ion-card>
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 5">{{p.song}}</h2>
+  </ion-card>
+
+<ion-card>
+  <h1 body style="background-color:#ff1493">FAVORITE FOOD</h1>
+</ion-card>
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 6">{{p.food}}</h2>
+  </ion-card>
+
+<ion-card>
+  <h1 body style="background-color:#ff1493">FAVORITE DRINK</h1>
+</ion-card>
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 7">{{p.drink}}</h2>
+  </ion-card>
+
+<ion-card>
+  <h1 body style="background-color:#ff1493">FAVORITE CLASSMATE</h1>
+</ion-card>
+<ion-card *ngFor="let p of person">
+  <h2 *ngIf="p.pers === 8">{{p.classmate}}</h2>
+  </ion-card>
+
+
+
+

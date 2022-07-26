@@ -1,0 +1,166 @@
+<style>
+  ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    max-width: 700px; 
+  }
+
+  ion-modal::part(backdrop) {
+    background:white;
+    opacity: 1;
+  }
+
+  ion-modal ion-toolbar {
+    --background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    --color: white;
+  }
+  
+</style>
+
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="aboutme"></ion-back-button>
+    </ion-buttons>
+    <h5>Personal Information</h5>
+  </ion-toolbar>
+
+<br>
+<br>
+      <ion-grid>
+        <center>
+        <ion-row>
+          <ion-col col-12 col-sm>
+            <div class="img-container">
+              <ion-buttons id="name"><img src="assets/name.jpg" alt=""class="center"></ion-buttons>
+              <ion-label>What is my name?</ion-label>
+            </div>
+            <ion-modal #modal trigger="name">
+              <ng-template>
+                <ion-content class="modal-body">
+                 
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>Christine Joy Masangcay Alangilan</ion-card-title>
+                    </ion-card-header>
+                  
+              
+                  </ion-card>
+                </ion-content>
+              </ng-template>
+          
+            </ion-modal>
+          </ion-col>
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons id="address"><img src="assets/images.png" alt=""class="center"></ion-buttons>
+            <ion-label>Where do I live?</ion-label>
+            </div>
+            <ion-modal #modal trigger="address">
+              <ng-template>
+                <ion-content class="modal-body">
+                 
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>045, Villa Teresa, Sambat, San Pascual, Batangas</ion-card-title>
+                    </ion-card-header>
+                  
+              
+                  </ion-card>
+                </ion-content>
+              </ng-template>
+          
+            </ion-modal>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons id="birthday"><img src="assets/calendar.jpg" alt="" class="center"></ion-buttons>
+              <ion-label>When is my birthday and what is my age?</ion-label>
+            </div>
+
+            <ion-modal #modal trigger="birthday">
+              <ng-template>
+                <ion-content class="modal-body">
+
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>December 19, 2000 <br> 21 Years Old</ion-card-title>
+                    </ion-card-header>
+                  </ion-card>
+
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-col>
+
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons id="school"><img src="assets/school.jpg" alt="" class="center"></ion-buttons>
+              <ion-label>What is the name of my school?</ion-label>
+            </div>
+            <ion-modal #modal trigger="school">
+              <ng-template>
+                <ion-content class="modal-body">
+
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>Batangas State University Alangilan Campus</ion-card-title>
+                    </ion-card-header>
+                  </ion-card>
+
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+            
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons id="course"><img src="assets/course.jpg" alt="" class="center"></ion-buttons>
+            <ion-label>What is my course?</ion-label>
+            </div>
+            <ion-modal #modal trigger="course">
+              <ng-template>
+                <ion-content class="modal-body">
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>Bachelor of Science in Information Technology <br> Major in Business Analytics</ion-card-title>
+                    </ion-card-header>
+                  </ion-card>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+
+          </ion-col>
+
+
+          <ion-col>
+            <div class="img-container">
+              <ion-buttons id="instructor"><img src="assets/instructor.jpg" alt="" class="center"></ion-buttons>
+            <ion-label>Who is my Instructor?</ion-label>
+            </div>
+            <ion-modal #modal trigger="instructor">
+              <ng-template>
+                <ion-content class="modal-body">
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>Mr. Jei Quitain Pastrana</ion-card-title>
+                    </ion-card-header>
+                  </ion-card>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+
+
+          </ion-col>
+        </ion-row>
+        </center>
+      </ion-grid>
+
